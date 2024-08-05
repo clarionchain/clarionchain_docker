@@ -15,11 +15,13 @@ This repository contains the Docker setup for running the ClarionChain Bitcoin c
 ```sh
 git clone https://github.com/clarionchain/clarionchain_docker.git
 cd clarionchain_docker
+```
 
+
+2. **Run the docker container:**
 ```sh
-2. **Run the docker container
 docker-compose up -d
-
+```
 
 
 
