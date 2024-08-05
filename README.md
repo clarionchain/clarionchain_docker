@@ -1,4 +1,3 @@
-# ClarionChain Docker
 
 # ClarionChain Docker Setup
 
