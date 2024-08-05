@@ -6,9 +6,9 @@ datasources:
     access: proxy
     url: clarionchain.mynetgear.com:54322
     database: clarioncore
-    user: postgres
+    user: clarionchain_docker
     secureJsonData:
-      password: ClarionCore
+      password: eE=(^;toDzzRsgzO
     jsonData:
       sslmode: disable
       postgresVersion: 1500
@@ -23,9 +23,9 @@ datasources:
     access: proxy
     url: clarionchain.mynetgear.com:54322
     database: coinmetrics
-    user: postgres
+    user: clarionchain_docker
     secureJsonData:
-      password: ClarionCore
+      password: eE=(^;toDzzRsgzO
     jsonData:
       sslmode: disable
       postgresVersion: 1500
@@ -51,19 +51,3 @@ datasources:
       disableMetricsLookup: false
     uid: cdtuns3j11d00b
 
-  - name: resources_lab
-    type: postgres
-    access: proxy
-    url: clarionchain.mynetgear.com:54322
-    database: resources
-    user: postgres
-    secureJsonData:
-      password: ClarionCore
-    jsonData:
-      sslmode: disable
-      postgresVersion: 1500
-      maxOpenConns: 100
-      maxIdleConns: 100
-      connMaxLifetime: 14400
-      minInterval: 1m
-    uid: bdtuns4j11c00a
