@@ -1,0 +1,69 @@
+apiVersion: 1
+
+datasources:
+  - name: clarioncore_lab
+    type: postgres
+    access: proxy
+    url: clarionchain.mynetgear.com:54322
+    database: clarioncore
+    user: postgres
+    secureJsonData:
+      password: ClarionCore
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1500
+      maxOpenConns: 100
+      maxIdleConns: 100
+      connMaxLifetime: 14400
+      minInterval: 1m
+    uid: fdtuc7xabp3b4d
+
+  - name: coinmetrics_lab
+    type: postgres
+    access: proxy
+    url: clarionchain.mynetgear.com:54322
+    database: coinmetrics
+    user: postgres
+    secureJsonData:
+      password: ClarionCore
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1500
+      maxOpenConns: 100
+      maxIdleConns: 100
+      connMaxLifetime: 14400
+      minInterval: 1m
+    uid: adtucdaolon40b
+
+  - name: prometheus_lab
+    type: prometheus
+    url: http://clarionchain.mynetgear.com:9090
+    access: proxy
+    jsonData:
+      httpMethod: POST
+      timeInterval: 15s
+      queryTimeout: 60s
+      tlsSkipVerify: false
+      alerting: true
+      httpHeaders: {}
+      minInterval: 15s
+      maxSeries: 1000000
+      disableMetricsLookup: false
+    uid: cdtuns3j11d00b
+
+  - name: resources_lab
+    type: postgres
+    access: proxy
+    url: clarionchain.mynetgear.com:54322
+    database: resources
+    user: postgres
+    secureJsonData:
+      password: ClarionCore
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1500
+      maxOpenConns: 100
+      maxIdleConns: 100
+      connMaxLifetime: 14400
+      minInterval: 1m
+    uid: bdtuns4j11c00a
