@@ -7,6 +7,9 @@ This repository contains the Docker setup for running the ClarionChain Bitcoin c
 
 - Docker
 - Docker Compose
+```sh
+https://docs.docker.com/compose/install/
+```
 
 ## Installation
 
