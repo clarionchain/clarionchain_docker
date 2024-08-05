@@ -24,4 +24,16 @@ docker-compose up -d
 ```
 
 
+3. **Go to http://localhost:3002 to view claroinchain_docker dashboard**
+```sh
+http://localhost:3002
+```
+
+
+4. **Username and Password for clarionchain_docker dashboard**
+```sh
+username = admin
+password = admin
+```
+
 
