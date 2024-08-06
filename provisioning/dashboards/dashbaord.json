@@ -1492,7 +1492,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus"
+            "type": "prometheus",
+            "uid": "cdtuns3j11d00b"
           },
           "editorMode": "code",
           "expr": "price_coinbase",
