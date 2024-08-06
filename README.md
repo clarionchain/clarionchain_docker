@@ -23,7 +23,7 @@ cd clarionchain_docker
 
 2. **Run the docker container:**
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 

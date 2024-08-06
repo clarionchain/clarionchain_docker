@@ -382,18 +382,14 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus"
+            "type": "prometheus",
+            "uid": "cdtuns3j11d00b"
           },
-          "disableTextWrap": false,
           "editorMode": "code",
-          "expr": "price_coinbase",
-          "fullMetaSearch": false,
-          "includeNullMetadata": true,
-          "instant": false,
+          "expr": "(price_coinbase + price_kraken)/2",
           "legendFormat": "__auto",
           "range": true,
-          "refId": "A",
-          "useBackend": false
+          "refId": "A"
         },
         {
           "datasource": {
