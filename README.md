@@ -15,6 +15,14 @@ https://docs.docker.com/compose/install/
 https://docs.docker.com/desktop/install/linux-install/
 ```
 
+```sh
+https://docs.docker.com/desktop/install/mac-install/
+```
+
+```sh
+https://docs.docker.com/desktop/install/windows-install/
+```
+
 ## Installation
 
 1. **Clone the repository:**
