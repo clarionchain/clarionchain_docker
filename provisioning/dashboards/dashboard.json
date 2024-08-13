@@ -23,7 +23,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 2,
-  "id": 1,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -33,7 +32,7 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 2,
+        "w": 3,
         "x": 0,
         "y": 0
       },
@@ -58,8 +57,8 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 10,
-        "x": 2,
+        "w": 9,
+        "x": 3,
         "y": 0
       },
       "id": 156,
@@ -717,6 +716,18 @@
                 "value": "short"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Avg Block Time"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "s"
+              }
+            ]
           }
         ]
       },
@@ -743,11 +754,11 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus"
+            "type": "prometheus",
+            "uid": "cdtuns3j11d00b"
           },
           "editorMode": "code",
           "expr": "cc_hashrate",
-          "instant": false,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
