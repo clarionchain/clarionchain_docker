@@ -18,7 +18,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 2,
-  "id": 3,
   "links": [],
   "panels": [
     {
@@ -327,7 +326,7 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 8,
+        "w": 12,
         "x": 0,
         "y": 3
       },
@@ -379,6 +378,122 @@
       ],
       "timeFrom": "8y",
       "title": "Price",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "bdut99grcwsg0c"
+      },
+      "description": "The price is derived from examining the UTXO set rather than pulling from an exchange. ",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisGridShow": false,
+            "axisLabel": "",
+            "axisPlacement": "right",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 100,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "displayName": "Price",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "orange",
+                "value": null
+              }
+            ]
+          },
+          "unit": "currencyUSD"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 3
+      },
+      "hideTimeOverride": true,
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": [
+            "last"
+          ],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "bdut99grcwsg0c"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "select * from utxoracle_price ;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "timeFrom": "5y",
+      "title": "UTXOracle Price",
       "transparent": true,
       "type": "timeseries"
     },
@@ -453,9 +568,9 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 8,
-        "x": 8,
-        "y": 3
+        "w": 12,
+        "x": 0,
+        "y": 9
       },
       "hideTimeOverride": true,
       "id": 3,
@@ -580,9 +695,9 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 8,
-        "x": 16,
-        "y": 3
+        "w": 12,
+        "x": 12,
+        "y": 9
       },
       "hideTimeOverride": true,
       "id": 5,
@@ -838,7 +953,7 @@
         "h": 12,
         "w": 12,
         "x": 0,
-        "y": 9
+        "y": 15
       },
       "hideTimeOverride": true,
       "id": 7,
@@ -1307,7 +1422,7 @@
         "h": 12,
         "w": 12,
         "x": 12,
-        "y": 9
+        "y": 15
       },
       "hideTimeOverride": true,
       "id": 6,
@@ -1448,6 +1563,6 @@
   "timezone": "browser",
   "title": "Market",
   "uid": "cdukfpls89vk0a",
-  "version": 15,
+  "version": 1,
   "weekStart": ""
 }

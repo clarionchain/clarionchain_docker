@@ -35,6 +35,23 @@ datasources:
       minInterval: 1m
     uid: adtucdaolon40b
 
+  - name: utxoracle_lab
+    type: postgres
+    access: proxy
+    url: clarionchain.mynetgear.com:54322
+    database: utxoracle
+    user: clarionchain_docker
+    secureJsonData:
+      password: eE=(^;toDzzRsgzO
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1500
+      maxOpenConns: 100
+      maxIdleConns: 100
+      connMaxLifetime: 14400
+      minInterval: 1m
+    uid: bdut99grcwsg0c
+
   - name: prometheus_lab
     type: prometheus
     url: http://clarionchain.mynetgear.com:9090

@@ -3376,7 +3376,7 @@
         ]
       },
       "gridPos": {
-        "h": 20,
+        "h": 14,
         "w": 12,
         "x": 0,
         "y": 12
@@ -3526,7 +3526,7 @@
         "uid": "fdtuc7xabp3b4d"
       },
       "gridPos": {
-        "h": 20,
+        "h": 14,
         "w": 12,
         "x": 12,
         "y": 12
@@ -3598,7 +3598,7 @@
         "h": 3,
         "w": 6,
         "x": 0,
-        "y": 32
+        "y": 26
       },
       "id": 62,
       "options": {
@@ -3689,7 +3689,7 @@
         "h": 3,
         "w": 6,
         "x": 6,
-        "y": 32
+        "y": 26
       },
       "id": 63,
       "options": {
@@ -3851,7 +3851,7 @@
         "h": 3,
         "w": 12,
         "x": 12,
-        "y": 32
+        "y": 26
       },
       "id": 64,
       "options": {
@@ -3870,11 +3870,11 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus"
+            "type": "prometheus",
+            "uid": "cdtuns3j11d00b"
           },
           "editorMode": "code",
           "expr": "cc_hashrate",
-          "instant": false,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
@@ -4077,7 +4077,7 @@
         "h": 2,
         "w": 12,
         "x": 0,
-        "y": 35
+        "y": 29
       },
       "id": 61,
       "options": {
@@ -4210,7 +4210,7 @@
         "h": 2,
         "w": 12,
         "x": 12,
-        "y": 35
+        "y": 29
       },
       "id": 54,
       "options": {
@@ -4331,7 +4331,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 37
+        "y": 31
       },
       "id": 67,
       "panels": [],
@@ -4347,7 +4347,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 38
+        "y": 32
       },
       "id": 55,
       "options": {
@@ -4369,7 +4369,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 46
+        "y": 40
       },
       "id": 51,
       "panels": [
@@ -7563,7 +7563,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 47
+        "y": 41
       },
       "id": 53,
       "panels": [
@@ -10100,6 +10100,6 @@
   "timezone": "browser",
   "title": "Mining",
   "uid": "fdukpqdcn1ji8f",
-  "version": 67,
+  "version": 1,
   "weekStart": ""
 }
