@@ -3538,7 +3538,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"text-align: center;\">\n    <video controls autoplay loop style=\"width: 100%; height: auto;\">\n        <source src=\"https://clarionchain.io/images/mining_pow.m4v\" type=\"video/mp4\">\n    </video>\n</div>\n",
+        "content": "<div style=\"text-align: center;\">\n    <video controls autoplay loop style=\"width: auto%; height: auto;\">\n        <source src=\"https://clarionchain.io/images/mining_pow.m4v\" type=\"video/mp4\">\n    </video>\n</div>\n",
         "mode": "html"
       },
       "pluginVersion": "11.1.3",
