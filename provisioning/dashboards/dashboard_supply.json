@@ -18,9 +18,22 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 13,
   "links": [],
   "panels": [
+    {
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "libraryPanel": {
+        "name": "navigation_logo",
+        "uid": "bdv2iix2twd8ge"
+      },
+      "title": ""
+    },
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
@@ -48,7 +61,7 @@
         "h": 19,
         "w": 4,
         "x": 0,
-        "y": 0
+        "y": 2
       },
       "id": 2,
       "options": {
@@ -120,6 +133,6 @@
   "timezone": "browser",
   "title": "Supply",
   "uid": "cdus733av6ghsb",
-  "version": 1,
+  "version": 7,
   "weekStart": ""
 }
