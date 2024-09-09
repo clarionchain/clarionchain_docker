@@ -7,13 +7,25 @@ services:
     ports:
       - "3002:3000"
     volumes:
-      - grafana_data:/var/lib/grafana
+      - grafana_data:/var/lib/grafana  # Store all Grafana data in the container volume
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
       - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
+      - GF_DATABASE_HOST=postgres_clarionchain_docker_host  # Database host
+      - GF_DATABASE_USER=/run/secrets/postgres_clarionchain_docker_user  # Use Docker secret for username
+      - GF_DATABASE_PASSWORD=/run/secrets/postgres_clarionchain_docker_password  # Use Docker secret for password
+    secrets:
+      - postgres_clarionchain_docker_user
+      - postgres_clarionchain_docker_password
     restart: always
 
 volumes:
   grafana_data:
+
+secrets:
+  postgres_clarionchain_docker_user:
+    external: true
+  postgres_clarionchain_docker_password:
+    external: true
